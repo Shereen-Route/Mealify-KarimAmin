@@ -1,0 +1,114 @@
+
+@media screen and (max-width: 992px) {
+    .navbar{
+     padding: 10px 20px;   
+    }
+    .navbar ul.nav-links{
+        visibility: hidden;
+    }
+    body:has(#mobile-links:target) .overlay-menu{
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.133);
+    }
+    body:has(#mobile-links:target) .navbar ul.nav-links
+     {
+        z-index: 99999;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        justify-content: flex-start;
+        padding-top: 30px;
+        padding-left: 30px;
+        right:0;
+        top:0;
+        bottom: 0; 
+        min-width: 50%;
+    }
+    .dark-mode{
+        display: flex;
+    }
+    .dark-mode a{
+        display:inline;
+    }
+    .navbar ul li{
+        padding-bottom: 30px;
+    }
+    .navbar a{
+        color:#000;
+    }
+    .navbar a i{
+        visibility: visible;
+        padding-right: 20px;
+    }
+
+    .hero{
+        text-align: center;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0;
+    }
+    .hero .right-content{
+        width:80%;
+        text-align: center;
+    }
+    .hero .right-content .buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .chefs .chefs-container{
+        padding: 0px 10px;
+        flex-direction: column;
+        gap:50px;
+    }
+    .chefs .chefs-container .chef-info{
+        width: 100%;
+    }
+
+    .gallery .row{
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    .gallery .row .column{
+        flex:100%;
+        max-width: 100%;
+    }
+
+    .contact-info{
+        flex-direction: column;
+    }
+    .contact-us .contact-info .contact-info-item{
+        width: 100%;
+    }
+
+    .footer{
+
+        padding: 15px 10px;
+        flex-direction: column;
+    }
+    .footer .footer1{
+        width: 100%;
+    }
+    .footer .footer2{
+        width: 100%;
+    }
+    .footer form{
+        flex-direction: column;
+       
+    }
+    .footer form input,.footer form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

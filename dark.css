@@ -1,0 +1,41 @@
+:root:has(.mode:checked){
+    --color-default: hsl(39, 73%, 44%);
+   
+}
+:root:has(.mode:checked) body
+{
+    color:white;
+    background-color: #202020;
+}
+
+  :root:has(.mode:checked) .container-warp-gray
+{
+    background-color: var(--black-color);
+}
+:root:has(.mode:checked) .container-with-box-shadow
+{
+    background-color: #202020;
+}
+:root:has(.mode:checked) .navbar ul li a
+{
+    color: white;
+}
+:root:has(.mode:checked) .hero .right-content .buttons .watch-btn{
+    background-color: transparent;
+}
+:root:has(.mode:checked) .hero .right-content .buttons .watch-btn a
+{
+    background-color: transparent;
+   color: #fff;
+}
+:root:has(.mode:checked) .hero .right-content .buttons .video-btn i{
+    color:black
+}
+:root:has(.mode:checked) .contact-info-item .contact-content p{
+    color:black;
+}
+:root:has(.mode:checked) .chefs p ,
+:root:has(.mode:checked) .gallery p ,
+:root:has(.mode:checked) .contact-us p{
+    color: #fff;
+}
